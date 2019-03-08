@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Virtual Antiquities Index v0.1</title>
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <h1>Virtual Antiquities Index</h1>
+    <p><strong class="welcomeMessage">Welcome loading...</strong></p>
+
+    <h1>Create Antiquities Owner</h1>
+    <label for="ownerName">Owner Name:</label>
+    <input type="text" id="ownerName" placeholder="e.g. Terrance McKenna" />
+    <label for="controllerAddress">Controller Address:</label>
+    <input type="text" id="controllerAddress" placeholder="e.g. 0x123ed1dd..." />
+    <label for="contactInformation">Contact Information:</label>
+    <input type="text" id="contactInformation" placeholder="e.g. contact@mydomain.com" />
+    <label for="registrationDate">Contact Information:</label>
+    <input type="text" id="registrationDate" placeholder="e.g. 2/25/2018" />
+    <button onclick="App.createAntiquitiesOwner()">Create Antiquity Owner</button>
+    <p id="status"></p>
+    <p>
+    <p>Number of Owners: <strong class="numberOwners">loading...</strong></p>
+      <strong>Hint:</strong> open the browser developer console to view any
+      errors and warnings.
+    </p>
+    <script src="index.js"></script>
+  </body>
+</html>
